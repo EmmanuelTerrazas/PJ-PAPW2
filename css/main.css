@@ -65,7 +65,7 @@ ul{
 }
 .crystal-grid{
 	position: absolute;
-	top: 50%;
+	top: 8000%;
 	left: 50%;
 	transform: translate(-50%);
 	height: 400px;
@@ -88,6 +88,7 @@ ul{
 	margin-right: -100px;
 	overflow: hidden;
 	opacity: 0.5;
+	cursor: pointer;
 }
 .crystal-grid ul li:hover{
 	opacity: 1;
@@ -123,32 +124,59 @@ ul{
 
 }
 .crystal-grid ul li.item1 .bg{
-	background: url('../resources/prueba1.jpg');
+	background: url('../resources/p1.jpg');
 	background-size: cover;
 	background-position: center;
 	/*background-attachment: scroll;*/
 }
 .crystal-grid ul li.item2 .bg{
-	background: url('../resources/prueba2.jpg');
+	background: url('../resources/p2.png');
 	background-size: cover;
 	background-position: center;
 	/*background-attachment: scroll;*/
 }
 .crystal-grid ul li.item3 .bg{
-	background: url('../resources/prueba3.png');
+	background: url('../resources/prueba6.jpg');
 	background-size: cover;
 	background-position: center;
 	/*background-attachment: scroll;*/
 }
 .crystal-grid ul li.item4 .bg{
-	background: url('../resources/prueba4.png');
+	background: url('../resources/p4.jpg');
 	background-size: cover;
 	background-position: center;
 	/*background-attachment: scroll;*/
 }
 .crystal-grid ul li.item5 .bg{
-	background: url('../resources/prueba1.jpg');
+	background: url('../resources/p5.jpg');
 	background-size: cover;
 	background-position: center;
 	/*background-attachment: scroll;*/
+}
+.h1-dmd{
+	color: #bfbfbf;
+}
+.bg-grey{
+	background: linear-gradient(#C02425 75%,#F0CB35);
+}
+.rowImg{
+	height: 200px;
+	overflow-y: hidden;
+	position: relative;
+}
+.rowImg h3{
+	position: absolute;
+	bottom: 0;
+	color: white;
+	font-size: 2em;
+	margin-bottom: 15px;
+	margin-left: 10px
+}
+.rowImg img{
+	width: 100%;
+	opacity: 0.5;
+	cursor:pointer;
+}
+.rowImg img:hover{
+	opacity: 1;
 }
