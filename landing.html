@@ -44,7 +44,7 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-md-12">
-      <h1 class="h1-dmd">Crea y busca reseñas de </h1><h1></h1>
+      <h1 class="h1-dmd">Crea y busca reseñas de <a id="h-tt"></a> </h1>
     </div>
   </div>
 </div>
@@ -55,11 +55,11 @@
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="crystal-grid">
           <ul>
-            <li class="item1"><div class="bg"></div></li>
-            <li class="item2"><div class="bg"></div></li>
-            <li class="item3"><div class="bg"></div></li>
-            <li class="item4"><div class="bg"></div></li>
-            <li class="item5"><div class="bg"></div></li>
+            <li class="item1" data="Libros"     ><div class="bg"></div></li>
+            <li class="item2" data="Comics"     ><div   class="bg"></div></li>
+            <li class="item3" data="Videojuegos"><div  class="bg"></div></li>
+            <li class="item4" data="Peliculas"  ><div   class="bg"></div></li>
+            <li class="item5" data="Series"     ><div   class="bg"></div></li>
           </ul>
         </div>
       </div>
@@ -113,7 +113,22 @@
 </div>
 
 <script type="text/javascript">
-  
+  $(".crystal-grid ul li").hover(function(){
+      debugger;
+      var txt = $(this).prop('class');
+      if(txt = "item1")
+        $("#h-tt").html("Libros");
+      if(txt = "item2")
+        $("#h-tt").html("Comics"); 
+      if(txt = "item3")
+        $("#h-tt").html("Videojuegos");
+      if(txt = "item4")
+        $("#h-tt").html("Peliculas");
+      if(txt = "item5")
+        $("#h-tt").html("Series"); 
+  }, function(){
+     $("#h-tt").html("");
+  });
 </script>
   
 
