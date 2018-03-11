@@ -235,6 +235,7 @@ ul{
 
   }
   .bi-lnd h1{
+  	padding-top: 150px;
   	font-size: 5.5em;
   	color: rgba(255, 255, 255, 0.1);
   	background: url('../resources/bg_h1.jpg');
@@ -244,7 +245,7 @@ ul{
   	text-shadow:  0 0 20px #ff9900;
   	word-wrap: break-word;
   }
-  @keyframes fireAnim{
+@keyframes fireAnim{
   	0%{
   		background-position: left 0px top 0px;
   	}
@@ -258,7 +259,10 @@ ul{
 		height: 100vh;
 
 	}
-	up-lnd img{
+	.bi-lnd h1{
+  	padding-top: 60px;
+  }
+	.up-lnd img{
   	width: 90%!important;
   }
 }
