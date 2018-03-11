@@ -157,7 +157,7 @@ ul{
 	color: #bfbfbf;
 }
 .bg-grey{
-	background: linear-gradient(#C02425 75%,#F0CB35);
+	background: linear-gradient(#fe8c00, #f83600) 90deg;
 }
 .rowImg{
 	height: 200px;
@@ -180,3 +180,86 @@ ul{
 .rowImg img:hover{
 	opacity: 1;
 }
+.svg-lines-cnt{
+	width: 100%;
+}
+.svg-lines{
+	  /*stroke: #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	  /*background:*/ 
+	  animation: StrokeColor 3s linear infinite ;
+}
+@keyframes StrokeColor{
+	0%{
+		stroke: red;
+	}
+	50%{
+		stroke: yellow;
+	}
+	100%{
+		stroke: red;
+	}
+}
+.svg-clip{
+  position: absolute;
+  top: 10px;
+  /*clip: rect(150px, 600px, 600px, 0px);/*rect (top, right, bottom, left)*/
+  animation: Fillanimate 2s linear;
+  }
+  @keyframes Fillanimate{
+  	0%{
+  		clip: rect(500px, 600px, 600px, 0px);
+  	}
+  	
+  	100%{
+  		clip: rect(0px, 600px, 600px, 0px);
+  	}
+  }
+  .analiza-lnd{
+  	position: relative;
+  }
+  .analiza-lnd h1, .up-lnd h1{
+  	color: white;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  }
+  .up-lnd h1{
+  	top: 170px;
+  	left: 55%;
+  }
+  .bi-lnd{
+  	position: absolute;
+  	top: 130px;
+
+  }
+  .bi-lnd h1{
+  	font-size: 5.5em;
+  	color: rgba(255, 255, 255, 0.1);
+  	background: url('../resources/bg_h1.jpg');
+  	-webkit-background-clip: text;
+  	background-repeat: repeat-x;
+  	animation: fireAnim 2s linear infinite;
+  	text-shadow:  0 0 20px #ff9900;
+
+  }
+  @keyframes fireAnim{
+  	0%{
+  		background-position: left 0px top 0px;
+  	}
+  	100%{
+  		background-position: left 500px top 0px;
+  	}
+  }
+@media screen and (max-width: 600px){
+	.up-lnd, .bi-lnd{
+		height: 300px;
+	}
+}
+/*  .up-lnd h1{
+  	color: white;
+  	position: absolute;
+  	top: 300%;
+  	left: 50%;
+  	transform: translate(-50%);
+  }*/
