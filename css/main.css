@@ -1,5 +1,5 @@
 body { 
-	background: #262626;
+	background: black;
 	padding: 0;
 	margin: 0; 
 }
@@ -87,8 +87,11 @@ ul{
 	margin-left: -100px;
 	margin-right: -100px;
 	overflow: hidden;
+	opacity: 0.5;
 }
-
+.crystal-grid ul li:hover{
+	opacity: 1;
+}
 .crystal-grid ul li.item1{
 	top:0%;
 	left: 0;
