@@ -253,6 +253,10 @@ ul{
   		background-position: left 500px top 0px;
   	}
   }
+
+  .profile img{
+    height: 25px;
+}
  
 @media screen and (max-width: 900px){
 	.up-lnd, .bi-lnd{

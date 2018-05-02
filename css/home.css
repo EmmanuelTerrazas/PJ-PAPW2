@@ -137,10 +137,6 @@ span.glyphicon-star, .glyphicon-star-empty{
   color:gold;
 }
 
-.profile img{
-    height: 25px;
-}
-
 @media only screen and (max-width: 650px) {
   .slider{
     height: 35vh;
