@@ -4,6 +4,7 @@ body{
 }
 .portada-critica{
 	background-repeat: no-repeat;
+	background-position: top;
 	background-size: cover;
 	height: 350px;
 	position: relative;
@@ -61,7 +62,7 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 350px;
-	background-position: 50% 90%;
+	background-position: bottom;
 	position: relative;
 
 }

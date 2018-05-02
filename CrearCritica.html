@@ -44,7 +44,7 @@
 			</div>
 	   </nav>
 
-	   <button class="btn btn-success guardarbtn">Guardar</button>
+	   <button class="btn btn-success guardarbtn" data-toggle="modal" data-target="#myModal">Guardar</button>
 
 	   <div class="container-fluid" style="margin-top: 70px;">
 
@@ -56,7 +56,7 @@
 	   </div>
 
 		
-	   <div class="portada-critica" style="background-image: url(resources/PLACEBO.gif); ">
+	   <div class="portada-critica" style="background-image: url(resources/prueba2.jpg); ">
 	   	
 	   	<div style="color:white; font-size: 35px; position: absolute; top: 25px; left: 10px;
 	   	">
@@ -132,7 +132,34 @@
 	   </div>
 	   
 
-	   <div class="bottom-portada" style="background-image: url(resources/PLACEBO.gif); "></div>
+	   <div class="bottom-portada" style="background-image: url(resources/prueba2.jpg); "></div>
+
+
+	   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Casi listo</h4>
+		      </div>
+		      <div class="modal-body">
+		      		<div class="form-horizontal">
+		      			<div class="form-group">
+		      				<label for="nombre" class="col-sm-2 control-label">Descripción breve</label>
+						    <div class="col-sm-10">
+						      <input type="text" class="form-control" id="nombre">
+						    </div>
+		      			</div>
+		      			
+		      		</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+		        <button type="button" class="btn btn-primary">Publicar Critica</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.min.js"></script>
